@@ -1,48 +1,26 @@
 import React from "react";
 import "./styles.scss";
 import { motion } from "framer-motion";
+import { Link } from "gatsby";
 
 export default function Menu(props) {
+  const { toggleMenu } = props;
   const menuVariants = {
     open: {
       y: 0,
-      transition: {
-        type: "spring",
-        stiffness: 20,
-        restDelta: 2,
-      },
     },
     closed: {
       y: "-100vh",
-      transition: {
-        delay: 1,
-        type: "spring",
-        stiffness: 400,
-        damping: 40,
-      },
     },
   };
   const menuItemVariants = {
     open: {
       y: 0,
       opacity: 1,
-      transition: {
-        y: {
-          stiffness: 1000,
-          velocity: -100,
-        },
-        staggerChildren: 0.07,
-        delayChildren: 0.2,
-      },
     },
     closed: {
       y: "-100vh",
       opacity: 0,
-      transition: {
-        y: { stiffness: 1000 },
-        staggerChildren: 0.05,
-        staggerDirection: -1,
-      },
     },
   };
   return (
@@ -55,19 +33,25 @@ export default function Menu(props) {
         variants={menuItemVariants}
         className="menu-container__home center"
       >
-        Home
+        <Link to="/" onClick={toggleMenu}>
+          Home
+        </Link>
       </motion.div>
       <motion.div
         variants={menuItemVariants}
         className="menu-container__about center"
       >
-        About
+        <Link to="/about" onClick={toggleMenu}>
+          About
+        </Link>
       </motion.div>
       <motion.div
         variants={menuItemVariants}
         className="menu-container__contact center"
       >
-        Contact
+        <Link to="/contact" onClick={toggleMenu}>
+          Contact
+        </Link>
       </motion.div>
     </motion.div>
   );
