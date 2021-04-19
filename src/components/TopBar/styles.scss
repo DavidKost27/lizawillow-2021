@@ -1,0 +1,22 @@
+.topBar {
+  width: 100vw;
+  height: 60px;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--topbar-color);
+  &__logo {
+    margin-right: auto;
+    font-size: 1.5rem;
+    color: var(--logo-color);
+  }
+  &__menu-btn {
+    border-radius: 60px;
+    background-color: var(--menu-btn-color);
+    .hamburger-react {
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+  }
+}
