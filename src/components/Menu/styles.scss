@@ -1,11 +1,10 @@
 .menu-container {
-  background-color: rgb(95, 161, 236);
   display: grid;
   position: absolute;
   top: 60px;
   left: 0;
   width: 100%;
-  height: calc(100% - 60px);
+  height: calc(100vh - 60px);
   .center {
     display: flex;
     align-items: center;
