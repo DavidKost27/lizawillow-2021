@@ -1,3 +1,7 @@
+/* Imported Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+/* font-family: 'Kaushan Script', cursive; */
+
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +10,9 @@
 
 :root {
   /* Top Bar Elements */
+  /* Logo */
+  --logo-font-family: "Kaushan Script", cursive;
+  /* Hamburger Button */
   --topbar-color: rgb(73, 73, 73);
   --logo-color: rgb(255, 255, 255);
   --menu-btn-color: rgb(255, 255, 255);
@@ -15,7 +22,21 @@
   --menu-contact-btn-color: rgb(7, 146, 116);
   /*  */
 
-  /* Page Background */
+  /* Layout Background */
   --layout-color: rgb(126, 125, 143);
+  /*  */
+
+  /* Footer */
+  --footer-text-color: rgb(255, 255, 255);
+  --footer-background-color: rgb(53, 53, 53);
+  /*  */
+
+  /* Home Page */
+  --switch-handle-color: rgb(255, 255, 255);
+  --switch-text-color: rgb(255, 255, 255);
+  --switch-text-font-family: "Kaushan Script", cursive;
+  --switch-raster-color: rgb(0, 0, 0);
+  --switch-vector-color: rgb(0, 0, 0);
+
   /*  */
 }

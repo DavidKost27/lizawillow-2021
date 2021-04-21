@@ -3,6 +3,7 @@ import "./layout.scss";
 import "antd/dist/antd.css";
 
 import TopBar from "../TopBar";
+import Footer from "../Footer";
 
 export default function Layout({ children }) {
   return (
@@ -10,6 +11,8 @@ export default function Layout({ children }) {
       <TopBar />
 
       <div className="layout">{children}</div>
+
+      <Footer />
     </>
   );
 }

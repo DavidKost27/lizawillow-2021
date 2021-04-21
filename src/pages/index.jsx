@@ -59,11 +59,7 @@ export const query = graphql`
         node {
           name
           childImageSharp {
-            gatsbyImageData(
-              transformOptions: {}
-
-              placeholder: BLURRED
-            )
+            gatsbyImageData(transformOptions: {}, placeholder: BLURRED)
           }
         }
       }
@@ -78,11 +74,7 @@ export const query = graphql`
         node {
           name
           childImageSharp {
-            gatsbyImageData(
-              transformOptions: {}
-
-              placeholder: BLURRED
-            )
+            gatsbyImageData(transformOptions: {}, placeholder: BLURRED)
           }
         }
       }
