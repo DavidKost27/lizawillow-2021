@@ -31,31 +31,13 @@ const IndexPage = ({ data }) => {
           defaultChecked
           onChange={typeSwitch}
         />
-        {/* <button
-          onClick={() => {
-            if (btnState) {
-              setBtnState(!btnState);
-              setTypeOfIllustrations(vector);
-            } else {
-              setBtnState(!btnState);
-              setTypeOfIllustrations(raster);
-            }
-          }}
-        >
-          Hello
-        </button> */}
-
-        <div className="raster-illustrations">
-          {typeOfIllustrations.map(({ node }) => (
-            <GatsbyImage image={getImage(node)} alt={node.name} />
-          ))}
+        <div className="grid-container">
+          <div className="grid-container__illustrations">
+            {typeOfIllustrations.map(({ node }) => (
+              <GatsbyImage image={getImage(node)} alt={node.name} />
+            ))}
+          </div>
         </div>
-
-        {/* <div className="vector-illustrations">
-          {vector.map(({ node }) => (
-            <GatsbyImage image={getImage(node)} alt={node.name} />
-          ))}
-        </div> */}
       </main>
     </Layout>
   );
@@ -63,6 +45,8 @@ const IndexPage = ({ data }) => {
 
 export default IndexPage;
 
+/* GraphqQL query with two objects "Raster" and "Vector"
+To pull illustrations from two different paths/Folders. */
 export const query = graphql`
   query {
     raster: allFile(
@@ -77,7 +61,7 @@ export const query = graphql`
           childImageSharp {
             gatsbyImageData(
               transformOptions: {}
-              width: 500
+
               placeholder: BLURRED
             )
           }
@@ -96,7 +80,7 @@ export const query = graphql`
           childImageSharp {
             gatsbyImageData(
               transformOptions: {}
-              width: 500
+
               placeholder: BLURRED
             )
           }
