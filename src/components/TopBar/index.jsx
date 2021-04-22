@@ -10,11 +10,13 @@ export default function TopBar() {
   };
   return (
     <div className="topBar">
-      <div className="topBar__logo">Liza Willow</div>
-      <span className="topBar__menu-btn">
-        <Hamburger size={29} rounded toggled={isOpen} toggle={setOpen} />
-      </span>
-      <Menu isOpen={isOpen} setOpen={setOpen} toggleMenu={toggleMenu} />
+      <div className="topbar-container">
+        <div className="topbar-container__logo">Liza Willow</div>
+        <span className="topbar-container__menu-btn">
+          <Hamburger size={29} rounded toggled={isOpen} toggle={setOpen} />
+        </span>
+        <Menu isOpen={isOpen} setOpen={setOpen} toggleMenu={toggleMenu} />
+      </div>
     </div>
   );
 }
