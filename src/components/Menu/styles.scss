@@ -20,3 +20,18 @@
     background-color: var(--menu-contact-btn-color);
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .menu-container {
+    top: 80px;
+    height: calc(100vh - 80px);
+    .center {
+    }
+    &__home {
+    }
+    &__about {
+    }
+    &__contact {
+    }
+  }
+}

@@ -2,4 +2,11 @@
   background-color: var(--layout-color);
   min-height: 100vh;
   padding-top: 60px;
+  overflow-y: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .layout {
+    padding-top: 80px;
+  }
 }

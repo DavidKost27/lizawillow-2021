@@ -33,9 +33,35 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .topBar {
+    height: 80px;
+    .topbar-container {
+      padding: 0 16px;
+      &__logo {
+        font-size: 2rem;
+      }
+      &__menu-btn {
+        .hamburger-react {
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1280px) {
+  .topBar {
+    height: 80px;
+    .topbar-container {
+      padding: 0 16px;
+      &__logo {
+        font-size: 2rem;
+      }
+      &__menu-btn {
+        .hamburger-react {
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1440px) {
