@@ -5,10 +5,15 @@
   left: 0;
   width: 100%;
   height: calc(100vh - 60px);
-  .center {
+
+  .page-link {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .link-text {
+    color: var(--menu-text-color);
+    padding: 20px 40px;
   }
   &__home {
     background-color: var(--menu-home-btn-color);
@@ -25,7 +30,35 @@
   .menu-container {
     top: 80px;
     height: calc(100vh - 80px);
-    .center {
+    .page-link {
+    }
+    .link-text {
+    }
+    &__home {
+    }
+    &__about {
+    }
+    &__contact {
+    }
+  }
+}
+
+@media only screen and (min-width: 1230px) {
+  .menu-container {
+    display: flex;
+    position: static;
+    width: auto;
+    height: 40px;
+    font-size: 40px;
+    .page-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+    }
+    .link-text {
+      padding: 0px 10px;
+      margin: 0 10px;
     }
     &__home {
     }
