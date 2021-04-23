@@ -5,6 +5,7 @@ import Menu from "../Menu";
 
 export default function TopBar() {
   const [isOpen, setOpen] = useState(false);
+  const screenSize = window.screen.width;
   const toggleMenu = () => {
     // get the body element tag
     let body = document.getElementsByTagName("body")[0];
@@ -14,6 +15,7 @@ export default function TopBar() {
     else body.style.overflow = "auto";
 
     setOpen(!isOpen);
+    console.log("Go");
   };
 
   return (
@@ -23,7 +25,12 @@ export default function TopBar() {
         <span className="topbar-container__menu-btn" onClick={toggleMenu}>
           <Hamburger size={29} rounded toggled={isOpen} toggle={setOpen} />
         </span>
-        <Menu isOpen={isOpen} setOpen={setOpen} toggleMenu={toggleMenu} />
+        <Menu
+          isOpen={isOpen}
+          setOpen={setOpen}
+          toggleMenu={toggleMenu}
+          screenSize={screenSize}
+        />
       </div>
     </div>
   );

@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import { Link } from "gatsby";
 
 export default function Menu(props) {
-  const screenSize = window.screen.width;
-  const { toggleMenu } = props;
+  const { toggleMenu, screenSize } = props;
   let menuVariants;
   let menuItemVariants;
   if (screenSize >= 1230) {
@@ -52,7 +51,9 @@ export default function Menu(props) {
           className="link-text"
           to="/"
           activeStyle={avtiveStyles}
-          onClick={toggleMenu}
+          onClick={() => {
+            screenSize > 1230 ? "" : toggleMenu();
+          }}
         >
           Home
         </Link>
@@ -65,7 +66,9 @@ export default function Menu(props) {
           className="link-text"
           to="/about"
           activeStyle={avtiveStyles}
-          onClick={toggleMenu}
+          onClick={() => {
+            screenSize > 1230 ? "" : toggleMenu();
+          }}
         >
           About
         </Link>
@@ -78,7 +81,9 @@ export default function Menu(props) {
           className="link-text"
           to="/contact"
           activeStyle={avtiveStyles}
-          onClick={toggleMenu}
+          onClick={() => {
+            screenSize > 1230 ? "" : toggleMenu();
+          }}
         >
           Contact
         </Link>
