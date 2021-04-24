@@ -13,23 +13,28 @@ export default function Footer() {
     <div className="footer">
       {/* Social Media Icons */}
       <div className="social-container">
-        <a href="https://www.instagram.com/lizawillow/">
+        <a href="https://www.instagram.com/lizawillow/" target="_blank">
           <div className="social-container__icon-wrapper">
             <FontAwesomeIcon icon={faInstagram} />
           </div>
         </a>
 
-        <div className="social-container__icon-wrapper">
-          <FontAwesomeIcon icon={faDribbble} />
-        </div>
-        <div className="social-container__icon-wrapper">
-          <FontAwesomeIcon
-            icon={faLinkedinIn}
-            style={{ padding: "0 0 0 2px" }}
-          />
-        </div>
+        <a href="https://dribbble.com/LizaWillow" target="_blank">
+          <div className="social-container__icon-wrapper">
+            <FontAwesomeIcon icon={faDribbble} />
+          </div>
+        </a>
 
-        <a href="https://www.instagram.com/lizawillow/">
+        <a href="" target="_blank">
+          <div className="social-container__icon-wrapper">
+            <FontAwesomeIcon
+              icon={faLinkedinIn}
+              style={{ padding: "0 0 0 2px" }}
+            />
+          </div>
+        </a>
+
+        <a href="">
           <div className="social-container__icon-wrapper">
             <FontAwesomeIcon
               icon={faPatreon}
