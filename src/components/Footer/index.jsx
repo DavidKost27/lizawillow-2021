@@ -37,14 +37,14 @@ export default function Footer() {
           </div>
         </a>
 
-        <a href="">
+        {/* <a href="">
           <div className="social-container__icon-wrapper">
             <FontAwesomeIcon
               icon={faPatreon}
               style={{ padding: "0 0 0 5px" }}
             />
           </div>
-        </a>
+        </a> */}
       </div>
       {/*  */}
 
