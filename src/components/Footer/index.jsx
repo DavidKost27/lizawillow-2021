@@ -25,7 +25,10 @@ export default function Footer() {
           </div>
         </a>
 
-        <a href="" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/liza-willow-6697ba210/"
+          target="_blank"
+        >
           <div className="social-container__icon-wrapper">
             <FontAwesomeIcon
               icon={faLinkedinIn}
