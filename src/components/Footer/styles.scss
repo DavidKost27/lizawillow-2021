@@ -1,4 +1,32 @@
 .footer {
   color: var(--footer-text-color);
   background-color: var(--footer-background-color);
+  padding: 15px 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .social-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0 25px 0;
+    &__icon-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 60px;
+      width: 45px;
+      height: 45px;
+      font-size: 30px;
+      margin: 0 10px;
+      color: var(--footer-icons-text-color);
+      background-color: var(--footer-icons-background-color);
+    }
+  }
+
+  .copyrights {
+  }
+
+  .built-by {
+  }
 }

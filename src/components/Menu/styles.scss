@@ -5,6 +5,7 @@
   left: 0;
   width: 100%;
   height: calc(100vh - 60px);
+  font-family: var(--logo-font-family);
 
   .page-link {
     display: flex;
@@ -55,7 +56,7 @@
       background-color: transparent;
     }
     .link-text {
-      padding: 0px 10px;
+      padding: 0px 15px 0 12px;
       margin: 0 10px;
     }
     &__home {

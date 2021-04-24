@@ -32,6 +32,10 @@
   /* Footer */
   --footer-text-color: rgb(255, 255, 255);
   --footer-background-color: rgb(53, 53, 53);
+
+  /* Social Media Icons */
+  --footer-icons-text-color: rgb(255, 255, 255);
+  --footer-icons-background-color: rgb(0, 0, 0);
   /*  */
 
   /* Home Page */
