@@ -34,7 +34,7 @@ export default function Menu(props) {
   const avtiveStyles = {
     color: "var(--menu-active-text-color)",
     backgroundColor: "var(--menu-active-background-color)",
-    borderRadius: "15px",
+    borderRadius: "10px",
   };
 
   return (

@@ -28,8 +28,6 @@
 
 @media only screen and (min-width: 768px) {
   .menu-container {
-    top: 80px;
-    height: calc(100vh - 80px);
     .page-link {
     }
     .link-text {
@@ -49,7 +47,7 @@
     position: static;
     width: auto;
     height: 40px;
-    font-size: 40px;
+    font-size: 25px;
     .page-link {
       display: flex;
       align-items: center;

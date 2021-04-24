@@ -22,9 +22,11 @@ export default function TopBar() {
     <div className="topBar">
       <div className="topbar-container">
         <div className="topbar-container__logo">Liza Willow</div>
+
         <span className="topbar-container__menu-btn" onClick={toggleMenu}>
           <Hamburger size={29} rounded toggled={isOpen} toggle={setOpen} />
         </span>
+
         <Menu
           isOpen={isOpen}
           setOpen={setOpen}

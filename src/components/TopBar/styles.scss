@@ -34,7 +34,6 @@
 
 @media only screen and (min-width: 768px) {
   .topBar {
-    height: 80px;
     .topbar-container {
       padding: 0 16px;
       &__logo {
@@ -48,9 +47,8 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1230px) {
   .topBar {
-    height: 80px;
     .topbar-container {
       padding: 0 16px;
       &__logo {
