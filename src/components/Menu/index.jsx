@@ -4,32 +4,39 @@ import { motion } from "framer-motion";
 import { Link } from "gatsby";
 
 export default function Menu(props) {
-  const { toggleMenu, screenSize, setOpen, isOpen } = props;
-  let menuVariants;
-  let menuItemVariants;
-  if (screenSize >= 1230) {
-    menuVariants = {};
-    menuItemVariants = {};
-  } else {
-    menuVariants = {
-      open: {
-        y: 0,
+  const { toggleMenu, screenSize, setIsOpen, isOpen } = props;
+
+  const hiddenMenu = {
+    visible: {
+      transition: {
+        duration: 2,
+        when: "beforeChildren",
+        staggerChildren: 0.09,
       },
-      closed: {
-        y: "-100vh",
+    },
+    hidden: {
+      transition: {
+        duration: 0.2,
+        when: "afterChildren",
       },
-    };
-    menuItemVariants = {
-      open: {
-        y: 0,
-        opacity: 1,
+    },
+  };
+
+  const item = {
+    visible: {
+      y: 0,
+      transition: {
+        duration: 2,
       },
-      closed: {
-        y: "-100vh",
-        opacity: 0,
+    },
+    hidden: {
+      y: "-100vh",
+
+      transition: {
+        duration: 2,
       },
-    };
-  }
+    },
+  };
 
   const avtiveStyles = {
     color: "var(--menu-active-text-color)",
@@ -39,13 +46,16 @@ export default function Menu(props) {
 
   return (
     <motion.div
-      animate={props.isOpen ? "open" : "closed"}
-      variants={menuVariants}
       className="menu-container"
+      variants={hiddenMenu}
+      initial="hidden"
+      animate={`${isOpen ? "visible" : "hidden"}`}
     >
       <motion.div
-        variants={menuItemVariants}
         className="menu-container__home page-link"
+        variants={item}
+        initial="hidden"
+        animate={`${isOpen ? "visible" : "hidden"}`}
       >
         <Link
           className="link-text"
@@ -59,8 +69,10 @@ export default function Menu(props) {
         </Link>
       </motion.div>
       <motion.div
-        variants={menuItemVariants}
         className="menu-container__about center page-link"
+        variants={item}
+        initial="hidden"
+        animate={`${isOpen ? "visible" : "hidden"}`}
       >
         <Link
           className="link-text"
@@ -74,8 +86,10 @@ export default function Menu(props) {
         </Link>
       </motion.div>
       <motion.div
-        variants={menuItemVariants}
         className="menu-container__contact center page-link"
+        variants={item}
+        initial="hidden"
+        animate={`${isOpen ? "visible" : "hidden"}`}
       >
         <Link
           className="link-text"
@@ -88,14 +102,6 @@ export default function Menu(props) {
           Contact
         </Link>
       </motion.div>
-      <motion.div
-        className="overlay"
-        onClick={() => setOpen(!isOpen)}
-        style={{
-          backgroundColor: `rgba(0, 0, 0, ${isOpen ? 0.4 : 0})`,
-          pointerEvents: isOpen ? "auto" : "none",
-        }}
-      ></motion.div>
     </motion.div>
   );
 }

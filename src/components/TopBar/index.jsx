@@ -4,10 +4,10 @@ import Hamburger from "hamburger-react";
 import Menu from "../Menu";
 
 export default function TopBar() {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const screenSize = window.screen.width;
   const toggleMenu = () => {
-    setOpen(!isOpen);
+    setIsOpen(!isOpen);
     // get the body element tag
     let body = document.getElementsByTagName("body")[0];
 
@@ -18,24 +18,31 @@ export default function TopBar() {
     console.log("Faggot");
   };
 
-  // toggled={isOpen} toggle={setOpen}
-
   return (
-    <div className="topBar">
-      <div className="topbar-container">
-        <div className="topbar-container__logo">Liza Willow</div>
+    <>
+      <div className="topBar">
+        <div className="topbar-container">
+          <div className="topbar-container__logo">Liza Willow</div>
 
-        <span className="topbar-container__menu-btn" onClick={toggleMenu}>
-          <Hamburger size={29} rounded />
-        </span>
-
-        <Menu
-          isOpen={isOpen}
-          setOpen={setOpen}
-          toggleMenu={toggleMenu}
-          screenSize={screenSize}
-        />
+          <span className="topbar-container__menu-btn" onClick={toggleMenu}>
+            <Hamburger size={29} rounded toggled={isOpen} toggle={setIsOpen} />
+          </span>
+        </div>
       </div>
-    </div>
+      <div
+        className="overlay"
+        onClick={() => setIsOpen(!isOpen)}
+        style={{
+          backgroundColor: `rgba(0, 0, 0, ${isOpen ? 0.7 : 0})`,
+          pointerEvents: isOpen ? "auto" : "none",
+        }}
+      ></div>
+      <Menu
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        toggleMenu={toggleMenu}
+        screenSize={screenSize}
+      />
+    </>
   );
 }
