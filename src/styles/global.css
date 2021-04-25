@@ -19,10 +19,12 @@
   /* Menu Setions */
   --menu-active-text-color: rgb(255, 255, 255);
   --menu-active-background-color: rgb(0, 0, 0);
-  --menu-text-color: rgb(255, 255, 255);
-  --menu-home-btn-color: rgb(156, 86, 28);
-  --menu-about-btn-color: rgb(33, 86, 121);
-  --menu-contact-btn-color: rgb(7, 146, 116);
+  --menu-text-color: rgb(0, 0, 0);
+  --menu-font-size: 30px;
+  --menu-bottom-border: 1.5px solid rgba(66, 66, 66, 0.432);
+  --menu-home-btn-color: rgb(255, 255, 255);
+  --menu-about-btn-color: rgb(255, 255, 255);
+  --menu-contact-btn-color: rgb(255, 255, 255);
   /*  */
 
   /* Layout Background */

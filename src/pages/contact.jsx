@@ -65,12 +65,12 @@ export default function Contact() {
         <ContactForm />
 
         <StaticImage
-          src="../assets/images/raster/dinoboy.jpeg"
-          alt="A dinosaur"
+          src="../assets/images/profile/liza proflie.jpg"
+          alt="a profile picture of liza with a selection of her illustrations around"
           placeholder="blurred"
           layout="fixed"
-          width={200}
-          height={200}
+          width={300}
+          height={300}
           style={{ borderRadius: "15px" }}
         />
       </div>

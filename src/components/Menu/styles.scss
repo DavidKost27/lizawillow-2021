@@ -14,13 +14,16 @@
   }
   .link-text {
     color: var(--menu-text-color);
+    font-size: var(--menu-font-size);
     padding: 20px 40px;
   }
   &__home {
     background-color: var(--menu-home-btn-color);
+    border-bottom: var(--menu-bottom-border);
   }
   &__about {
     background-color: var(--menu-about-btn-color);
+    border-bottom: var(--menu-bottom-border);
   }
   &__contact {
     background-color: var(--menu-contact-btn-color);
