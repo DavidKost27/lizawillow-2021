@@ -7,7 +7,7 @@ export default function Menu(props) {
   const { toggleMenu, screenSize, setOpen, isOpen } = props;
   let menuVariants;
   let menuItemVariants;
-  if (screenSize >= 1230) {
+  if (screenSize >= 1260) {
     menuVariants = {};
     menuItemVariants = {};
   } else {
@@ -93,7 +93,7 @@ export default function Menu(props) {
         onClick={() => setOpen(!isOpen)}
         style={{
           backgroundColor: `rgba(0, 0, 0, ${isOpen ? 0.4 : 0})`,
-          pointerEvents: isOpen ? "auto" : "none",
+          pointerEvents: open ? "auto" : "none",
         }}
       ></motion.div>
     </motion.div>

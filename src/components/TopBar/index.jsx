@@ -7,7 +7,6 @@ export default function TopBar() {
   const [isOpen, setOpen] = useState(false);
   const screenSize = window.screen.width;
   const toggleMenu = () => {
-    setOpen(!isOpen);
     // get the body element tag
     let body = document.getElementsByTagName("body")[0];
 
@@ -15,10 +14,9 @@ export default function TopBar() {
     if (!isOpen) body.style.overflow = "hidden";
     else body.style.overflow = "auto";
 
-    console.log("Faggot");
+    setOpen(!isOpen);
+    console.log("Go");
   };
-
-  // toggled={isOpen} toggle={setOpen}
 
   return (
     <div className="topBar">
@@ -26,7 +24,7 @@ export default function TopBar() {
         <div className="topbar-container__logo">Liza Willow</div>
 
         <span className="topbar-container__menu-btn" onClick={toggleMenu}>
-          <Hamburger size={29} rounded />
+          <Hamburger size={29} rounded toggled={isOpen} toggle={setOpen} />
         </span>
 
         <Menu
