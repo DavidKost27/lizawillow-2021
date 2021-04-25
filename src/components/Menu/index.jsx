@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Link } from "gatsby";
 
 export default function Menu(props) {
-  const { toggleMenu, screenSize } = props;
+  const { toggleMenu, screenSize, setOpen, isOpen } = props;
   let menuVariants;
   let menuItemVariants;
   if (screenSize >= 1260) {
@@ -88,6 +88,14 @@ export default function Menu(props) {
           Contact
         </Link>
       </motion.div>
+      <motion.div
+        className="overlay"
+        onClick={() => setOpen(!isOpen)}
+        style={{
+          backgroundColor: `rgba(0, 0, 0, ${isOpen ? 0.4 : 0})`,
+          pointerEvents: open ? "auto" : "none",
+        }}
+      ></motion.div>
     </motion.div>
   );
 }

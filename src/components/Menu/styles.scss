@@ -1,16 +1,16 @@
 .menu-container {
-  display: grid;
   position: absolute;
   top: 60px;
   left: 0;
   width: 100%;
   height: calc(100vh - 60px);
   font-family: var(--logo-font-family);
-
+  z-index: 10;
   .page-link {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 150px;
   }
   .link-text {
     color: var(--menu-text-color);
@@ -27,6 +27,11 @@
   }
   &__contact {
     background-color: var(--menu-contact-btn-color);
+  }
+  .overlay {
+    height: 100vh;
+    width: 100vw;
+    z-index: 9;
   }
 }
 
