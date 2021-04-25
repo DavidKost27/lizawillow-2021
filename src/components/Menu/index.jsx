@@ -7,7 +7,7 @@ export default function Menu(props) {
   const { toggleMenu, screenSize } = props;
   let menuVariants;
   let menuItemVariants;
-  if (screenSize >= 1230) {
+  if (screenSize >= 1260) {
     menuVariants = {};
     menuItemVariants = {};
   } else {

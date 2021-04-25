@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/Layout/layout";
 import { useForm, ValidationError } from "@formspree/react";
 import "../styles/contact.scss";
-import { StaticImage } from "gatsby-plugin-image";
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xqkwavkg");
@@ -63,16 +62,6 @@ export default function Contact() {
     <Layout>
       <div className="contact-page-container">
         <ContactForm />
-
-        <StaticImage
-          src="../assets/images/profile/liza proflie.jpg"
-          alt="a profile picture of liza with a selection of her illustrations around"
-          placeholder="blurred"
-          layout="fixed"
-          width={300}
-          height={300}
-          style={{ borderRadius: "15px" }}
-        />
       </div>
     </Layout>
   );
