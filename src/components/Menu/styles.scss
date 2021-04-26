@@ -1,0 +1,24 @@
+.menu-container {
+  visibility: hidden;
+  position: absolute;
+  &__link-text {
+  }
+}
+
+@media only screen and (min-width: 1230px) {
+  .menu-container {
+    visibility: visible;
+    position: static;
+    &__link-text {
+      margin-left: 15px;
+      padding: 0 13px 3px 10px;
+      font-size: 25px;
+      outline: none;
+      color: var(--menu-text-color);
+      font-family: var(--link-menu-font-family);
+    }
+    &__link-text:hover {
+      color: var(--link-hover-color);
+    }
+  }
+}

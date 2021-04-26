@@ -25,6 +25,9 @@
   --menu-home-btn-color: rgb(255, 255, 255);
   --menu-about-btn-color: rgb(255, 255, 255);
   --menu-contact-btn-color: rgb(255, 255, 255);
+  /* Desktop Menu */
+  --link-hover-color: rgb(69, 4, 98);
+  --link-menu-font-family: "Kaushan Script", cursive;
   /*  */
 
   /* Layout Background */

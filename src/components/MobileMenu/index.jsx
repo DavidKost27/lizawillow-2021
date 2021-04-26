@@ -46,24 +46,33 @@ export default function MobileMenu(props) {
 
   return (
     <motion.div
-      className="menu-container"
+      className="mobileMenu-container"
       variants={hiddenMenu}
       initial="hidden"
       animate={`${isOpen ? "visible" : "hidden"}`}
     >
-      <motion.div className="menu-container__home page-link" variants={item}>
+      <motion.div
+        className="mobileMenu-container__home page-link"
+        variants={item}
+      >
         <Link className="link-text" to="/" activeStyle={avtiveStyles}>
           Home
         </Link>
       </motion.div>
 
-      <motion.div className="menu-container__about page-link" variants={item}>
+      <motion.div
+        className="mobileMenu-container__about page-link"
+        variants={item}
+      >
         <Link className="link-text" to="/about" activeStyle={avtiveStyles}>
           About
         </Link>
       </motion.div>
 
-      <motion.div className="menu-container__contact page-link" variants={item}>
+      <motion.div
+        className="mobileMenu-container__contact page-link"
+        variants={item}
+      >
         <Link className="link-text" to="/contact" activeStyle={avtiveStyles}>
           Contact
         </Link>

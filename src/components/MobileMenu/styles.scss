@@ -1,4 +1,4 @@
-.menu-container {
+.mobileMenu-container {
   position: absolute;
   top: 60px;
   left: 0;
@@ -37,7 +37,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .menu-container {
+  .mobileMenu-container {
     .page-link {
     }
     .link-text {
@@ -52,21 +52,12 @@
 }
 
 @media only screen and (min-width: 1230px) {
-  .menu-container {
-    display: flex;
-    position: static;
-    width: auto;
-    height: 40px;
-    font-size: 25px;
+  .mobileMenu-container {
+    visibility: hidden;
+    position: absolute;
     .page-link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: transparent;
     }
     .link-text {
-      padding: 0px 15px 0 12px;
-      margin: 0 10px;
     }
     &__home {
     }

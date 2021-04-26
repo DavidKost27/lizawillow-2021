@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./styles.scss";
 import Hamburger from "hamburger-react";
 import MobileMenu from "../MobileMenu";
+import Menu from "../Menu";
 
 export default function TopBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +25,8 @@ export default function TopBar() {
           <span className="topbar-container__menu-btn" onClick={toggleMenu}>
             <Hamburger size={29} rounded toggled={isOpen} toggle={setIsOpen} />
           </span>
+
+          <Menu />
         </div>
       </div>
       <div
