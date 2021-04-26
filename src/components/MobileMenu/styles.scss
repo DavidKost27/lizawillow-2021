@@ -1,9 +1,8 @@
 .mobileMenu-container {
-  position: absolute;
+  position: fixed;
   top: 60px;
   left: 0;
   width: 100%;
-  height: calc(100vh - 60px);
   font-family: var(--logo-font-family);
   z-index: 50;
   .page-link {

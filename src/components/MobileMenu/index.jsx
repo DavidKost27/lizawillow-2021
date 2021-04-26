@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Link } from "gatsby";
 
 export default function MobileMenu(props) {
-  const { isOpen } = props;
+  const { toggleMenu, isOpen } = props;
 
   const hiddenMenu = {
     visible: {
@@ -55,7 +55,12 @@ export default function MobileMenu(props) {
         className="mobileMenu-container__home page-link"
         variants={item}
       >
-        <Link className="link-text" to="/" activeStyle={avtiveStyles}>
+        <Link
+          className="link-text"
+          to="/"
+          activeStyle={avtiveStyles}
+          onClick={toggleMenu}
+        >
           Home
         </Link>
       </motion.div>
@@ -64,7 +69,12 @@ export default function MobileMenu(props) {
         className="mobileMenu-container__about page-link"
         variants={item}
       >
-        <Link className="link-text" to="/about" activeStyle={avtiveStyles}>
+        <Link
+          className="link-text"
+          to="/about"
+          activeStyle={avtiveStyles}
+          onClick={toggleMenu}
+        >
           About
         </Link>
       </motion.div>
@@ -73,7 +83,12 @@ export default function MobileMenu(props) {
         className="mobileMenu-container__contact page-link"
         variants={item}
       >
-        <Link className="link-text" to="/contact" activeStyle={avtiveStyles}>
+        <Link
+          className="link-text"
+          to="/contact"
+          activeStyle={avtiveStyles}
+          onClick={toggleMenu}
+        >
           Contact
         </Link>
       </motion.div>
