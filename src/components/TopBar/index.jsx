@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import "./styles.scss";
 import Hamburger from "hamburger-react";
-import Menu from "../Menu";
+import MobileMenu from "../MobileMenu";
 
 export default function TopBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const screenSize = window.screen.width;
   const toggleMenu = () => {
     setIsOpen(!isOpen);
     // get the body element tag
@@ -14,8 +13,6 @@ export default function TopBar() {
     // apply the styles based on menu state
     if (!isOpen) body.style.overflow = "hidden";
     else body.style.overflow = "auto";
-
-    console.log("Faggot");
   };
 
   return (
@@ -37,12 +34,7 @@ export default function TopBar() {
           pointerEvents: isOpen ? "auto" : "none",
         }}
       ></div>
-      <Menu
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-        toggleMenu={toggleMenu}
-        screenSize={screenSize}
-      />
+      <MobileMenu isOpen={isOpen} toggleMenu={toggleMenu} />
     </>
   );
 }
