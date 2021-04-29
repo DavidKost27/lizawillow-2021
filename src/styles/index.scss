@@ -4,13 +4,21 @@
   max-width: 1200px;
   padding: 32px 24px 20px 24px;
   text-align: left;
-  &__header {
-    font-family: "Overlock", cursive;
-    font-weight: 900;
-    font-size: 50px;
-    margin-bottom: 24px;
+  .home-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    &__header {
+      font-family: "Overlock", cursive;
+      font-weight: 900;
+      font-size: 50px;
+      margin-bottom: 24px;
+      margin-right: auto;
+    }
   }
   .ant-switch {
+    margin-left: 40px;
     transform: scale(2);
     margin-bottom: 30px;
     background-color: var(--switch-vector-color);
@@ -24,7 +32,7 @@
     background-color: var(--switch-handle-color);
   }
   .ant-switch-inner {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--switch-text-color);
     font-family: var(--switch-text-font-family);
   }
@@ -39,6 +47,45 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
       grid-gap: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1230px) {
+  .home-container {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 1200px;
+    padding: 32px 24px 20px 24px;
+    text-align: left;
+    .home-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      &__header {
+        font-family: "Overlock", cursive;
+        font-weight: 900;
+        font-size: 50px;
+        margin-bottom: 24px;
+        margin-right: auto;
+      }
+    }
+    .ant-switch {
+    }
+    .ant-switch:focus:hover {
+    }
+    .ant-switch-checked {
+    }
+    .ant-switch-handle::before {
+    }
+    .ant-switch-inner {
+    }
+    .grid-container {
+      &__illustrations {
+        > div {
+        }
+      }
     }
   }
 }
