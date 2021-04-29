@@ -1,10 +1,10 @@
 import * as React from "react";
 import "../styles/index.scss";
 import Layout from "../components/Layout/layout";
+import TypeTabs from "../components/TypeTabs";
 import { useState } from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { Switch } from "antd";
 
 const IndexPage = ({ data }) => {
   const raster = data.raster.edges;
@@ -15,10 +15,9 @@ const IndexPage = ({ data }) => {
   /*   Logic for the switch button that uses both
   states above to switch between types of illustration that are displayed. */
   const typeSwitch = () => {
-    setBtnState(!btnState);
-    if (!btnState) {
+    if (btnState) {
       setTypeOfIllustrations(vector);
-    } else {
+    } else if (!btnState) {
       setTypeOfIllustrations(raster);
     }
   };
@@ -27,11 +26,11 @@ const IndexPage = ({ data }) => {
       <main className="home-container">
         <div className="home-header">
           <h1 className="home-header__header">Portfolio</h1>
-          <Switch
-            checkedChildren="Raster"
-            unCheckedChildren="Vector"
-            defaultChecked
-            onChange={typeSwitch}
+
+          <TypeTabs
+            setBtnState={setBtnState}
+            typeSwitch={typeSwitch}
+            btnState={btnState}
           />
         </div>
         <div className="grid-container">

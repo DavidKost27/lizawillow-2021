@@ -7,6 +7,7 @@
   z-index: 50;
   font-family: var(--link-menu-font-family);
   font-weight: 400;
+
   .page-link {
     display: flex;
     align-items: center;
@@ -19,6 +20,7 @@
     color: var(--menu-text-color);
     font-size: var(--menu-font-size);
     padding: 20px 40px;
+    text-decoration: none;
   }
   &__home {
     background-color: var(--menu-home-btn-color);
