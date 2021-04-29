@@ -5,8 +5,7 @@ import { Link } from "gatsby";
 export default function Menu() {
   const avtiveStyles = {
     color: "var(--menu-active-text-color)",
-    backgroundColor: "var(--menu-active-background-color)",
-    borderRadius: "10px",
+    fontWeight: "700",
   };
   return (
     <div className="menu-container">

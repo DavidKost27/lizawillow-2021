@@ -25,12 +25,14 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <main className="home-container">
-        <Switch
+        {/* <Switch
           checkedChildren="Raster"
           unCheckedChildren="Vector"
           defaultChecked
           onChange={typeSwitch}
-        />
+        /> */}
+
+        <h1 className="home-container__header">Portfolio</h1>
         <div className="grid-container">
           <div className="grid-container__illustrations">
             {typeOfIllustrations.map(({ node }) => (

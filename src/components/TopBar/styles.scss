@@ -4,9 +4,11 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 60px;
+  height: 80px;
+  padding: 0 16px;
   background-color: var(--topbar-color);
-
+  -webkit-box-shadow: 0px 0px 14px 9px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 0px 14px 9px rgba(0, 0, 0, 0.07);
   .topbar-container {
     display: flex;
     flex-direction: row;
@@ -14,7 +16,6 @@
     max-width: 1200px;
     margin: 0 auto;
     height: 100%;
-    padding: 0 16px;
     z-index: 200;
     &__logo {
       margin-right: auto;
@@ -24,7 +25,8 @@
     }
     &__menu-btn {
       border-radius: 60px;
-      background-color: var(--menu-btn-color);
+      color: var(--hamburger-btn-color);
+      background-color: var(--hamburger-btn-backgroubd-color);
       .hamburger-react {
         outline: none;
         -webkit-tap-highlight-color: transparent;
@@ -44,7 +46,6 @@
 @media only screen and (min-width: 768px) {
   .topBar {
     .topbar-container {
-      padding: 0 16px;
       &__logo {
         font-size: 2rem;
       }
@@ -58,8 +59,8 @@
 
 @media only screen and (min-width: 1230px) {
   .topBar {
+    padding: 0;
     .topbar-container {
-      padding: 0 16px;
       &__logo {
         font-size: 2rem;
       }
@@ -74,10 +75,4 @@
   .overlay {
     visibility: hidden;
   }
-}
-
-@media only screen and (min-width: 1440px) {
-}
-
-@media only screen and (min-width: 1920px) {
 }

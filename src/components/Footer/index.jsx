@@ -36,27 +36,15 @@ export default function Footer() {
             />
           </div>
         </a>
-
-        {/* <a href="">
-          <div className="social-container__icon-wrapper">
-            <FontAwesomeIcon
-              icon={faPatreon}
-              style={{ padding: "0 0 0 5px" }}
-            />
-          </div>
-        </a> */}
       </div>
-      {/*  */}
 
       {/* CopyRights */}
       <div className="copyrights">
         All rights reserved © Liza Willow , 2020 - 2021.
       </div>
-      {/*  */}
 
       {/* Built by */}
       <div className="built-by">Website built by David Kostuchenko.</div>
-      {/*  */}
     </div>
   );
 }

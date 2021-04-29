@@ -1,9 +1,8 @@
 .contact-page-container {
-  padding: 70px 20px 0 20px;
+  padding: 50px 20px 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   .form-container {
     display: flex;
     flex-direction: column;
@@ -12,7 +11,7 @@
     font-size: 14px;
     color: var(--contact-text-color);
     border-radius: 20px;
-    padding-top: 40px;
+    padding-top: 20px;
     max-width: 500px;
     .form {
       display: flex;
@@ -22,14 +21,15 @@
         > label {
           padding-bottom: 4px;
           display: inline-block;
+          font-size: 24px;
         }
       }
       .input-section {
         width: 100%;
         height: 40px;
         font-size: 14px;
-        border-radius: 20px;
-        border: none;
+        border-radius: 6px;
+        border: 1px solid #ccc;
         outline: none;
         padding: 0 10px;
         color: var(--contact-input-text-color);
@@ -54,9 +54,34 @@
         padding: 5px;
         font-size: 25px;
         width: 8rem;
-        border-radius: 10px;
+        border-radius: 6px;
         background-color: var(--contact-button-background-color);
         color: var(--contact-button-text-color);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1230px) {
+  .contact-page-container {
+    padding: 60px 20px 0 20px;
+
+    .form-container {
+      .form {
+        .input-container {
+          > label {
+          }
+        }
+        .input-section {
+        }
+        &__email {
+        }
+        &__name {
+        }
+        &__message {
+        }
+        &__submit-btn {
+        }
       }
     }
   }

@@ -40,8 +40,7 @@ export default function MobileMenu(props) {
 
   const avtiveStyles = {
     color: "var(--menu-active-text-color)",
-    backgroundColor: "var(--menu-active-background-color)",
-    borderRadius: "10px",
+    fontWeight: "900",
   };
 
   return (

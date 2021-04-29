@@ -5,11 +5,15 @@
   width: 100%;
   font-family: var(--logo-font-family);
   z-index: 50;
+  font-family: var(--link-menu-font-family);
+  font-weight: 400;
   .page-link {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 150px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.14);
   }
   .link-text {
     color: var(--menu-text-color);
@@ -18,13 +22,12 @@
   }
   &__home {
     background-color: var(--menu-home-btn-color);
-    border-bottom: var(--menu-bottom-border);
+
     position: relative;
     z-index: 15;
   }
   &__about {
     background-color: var(--menu-about-btn-color);
-    border-bottom: var(--menu-bottom-border);
     position: relative;
     z-index: 14;
   }

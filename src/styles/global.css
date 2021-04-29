@@ -1,8 +1,10 @@
 /* Imported Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
-/* font-family: 'Kaushan Script', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
+/* font-family: 'Noto Serif', serif; */
 
-@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overlock:wght@400;700;900&display=swap");
+/* font-family: 'Overlock', cursive; */
+/*  */
 
 * {
   padding: 0;
@@ -13,58 +15,64 @@
 :root {
   /* Top Bar Elements */
   /* Logo */
-  --logo-font-family: "Fredericka the Great", cursive;
+  --logo-font-family: "Noto Serif", serif;
   /* Hamburger Button */
-  --topbar-color: rgb(22, 10, 56);
-  --logo-color: rgb(255, 255, 255);
-  --menu-btn-color: rgb(255, 255, 255);
+  --topbar-color: rgb(255, 255, 255);
+  --logo-color: rgb(0, 0, 0);
+  --hamburger-btn-color: rgb(255, 255, 255);
+  --hamburger-btn-backgroubd-color: rgb(0, 0, 0);
   /* Menu Setions */
-  --menu-active-text-color: rgb(255, 255, 255);
-  --menu-active-background-color: rgb(0, 0, 0);
-  --menu-text-color: rgb(255, 255, 255);
+  --menu-active-text-color: rgb(0, 0, 0);
+  --menu-text-color: rgb(0, 0, 0);
   --menu-font-size: 30px;
   --menu-bottom-border: 1.5px solid rgba(66, 66, 66, 0.432);
   --menu-home-btn-color: rgb(255, 255, 255);
   --menu-about-btn-color: rgb(255, 255, 255);
   --menu-contact-btn-color: rgb(255, 255, 255);
   /* Desktop Menu */
-  --link-hover-color: rgb(69, 4, 98);
-  --link-menu-font-family: "Kaushan Script", cursive;
+  --link-hover-color: rgb(0, 119, 255);
+  --link-menu-font-family: "Overlock", cursive;
+  --link-menu-letter-spacing: 2px;
   /*  */
 
   /* Layout Background */
-  --layout-color: rgb(40, 29, 75);
+  --layout-color: rgb(255, 255, 255);
   /*  */
 
   /* Footer */
   --footer-text-color: rgb(255, 255, 255);
-  --footer-background-color: rgb(20, 12, 42);
-
+  --footer-background-color: rgb(59, 59, 59);
   /* Social Media Icons */
-  --footer-icons-text-color: rgb(255, 255, 255);
-  --footer-icons-background-color: rgb(0, 0, 0);
+  --footer-icons-text-color: rgb(0, 0, 0);
+  --footer-icons-background-color: rgb(255, 255, 255);
+  --footer-icons-text-active-color: rgb(255, 255, 255);
+  --footer-icons-background-active-color: rgb(0, 0, 0);
   /*  */
 
   /* Home Page */
   --switch-handle-color: rgb(255, 255, 255);
   --switch-text-color: rgb(255, 255, 255);
-  --switch-text-font-family: "Kaushan Script", cursive;
+  --switch-text-font-family: "Overlock", cursive;
   --switch-raster-color: rgb(0, 0, 0);
   --switch-vector-color: rgb(0, 0, 0);
   /*  */
 
   /* About Page */
+  /* Header */
+  --header-text-color: rgb(0, 0, 0);
+  /* Description */
+  --description-text-color: rgb(0, 0, 0);
+  --description-font-size: 18px;
   /*  */
 
   /* Contact Page */
-  --contact-text-color: rgb(255, 255, 255);
+  --contact-text-color: rgb(0, 0, 0);
   /* Input Fields */
   --contact-input-text-color: rgb(0, 0, 0);
   --contact-input-background-color: rgb(255, 255, 255);
-  /*  */
   /* Submit Button */
   --contact-button-text-color: rgb(255, 255, 255);
-  --contact-button-background-color: rgb(77, 31, 31);
+  --contact-button-background-color: rgb(0, 0, 0);
   /*  */
 
   /*  */

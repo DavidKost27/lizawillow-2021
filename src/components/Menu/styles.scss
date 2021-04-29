@@ -14,8 +14,10 @@
       padding: 0 13px 3px 10px;
       font-size: 25px;
       outline: none;
+      font-weight: 400;
       color: var(--menu-text-color);
       font-family: var(--link-menu-font-family);
+      letter-spacing: var(--link-menu-letter-spacing);
     }
     &__link-text:hover {
       color: var(--link-hover-color);

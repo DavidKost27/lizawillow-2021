@@ -31,3 +31,45 @@
   .built-by {
   }
 }
+
+@media only screen and (min-width: 1230px) {
+  .footer {
+    color: var(--footer-text-color);
+    background-color: var(--footer-background-color);
+    padding: 15px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .social-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 10px 0 25px 0;
+      &__icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 60px;
+        width: 45px;
+        height: 45px;
+        font-size: 30px;
+        margin: 0 10px;
+        color: var(--footer-icons-text-color);
+        background-color: var(--footer-icons-background-color);
+      }
+      &__icon-wrapper:hover {
+        color: var(--footer-icons-text-active-color);
+        background-color: var(--footer-icons-background-active-color);
+      }
+    }
+
+    .copyrights {
+      font-size: 18px;
+    }
+
+    .built-by {
+      font-size: 18px;
+    }
+  }
+}
