@@ -49,11 +49,12 @@
   /*  */
 
   /* Home Page */
-  --switch-handle-color: rgb(255, 255, 255);
-  --switch-text-color: rgb(255, 255, 255);
-  --switch-text-font-family: "Overlock", cursive;
-  --switch-raster-color: rgb(0, 0, 0);
-  --switch-vector-color: rgb(0, 0, 0);
+  --type-tabs-font-size: 20px;
+  --type-tabs-text-color: rgb(0, 0, 0);
+  --type-tabs-active-text-color: rgb(255, 255, 255);
+  --type-tabs-backgroundcolor: rgb(255, 255, 255);
+  --type-tabs-active-backgroundcolor: rgb(0, 0, 0);
+  --type-tabs-text-font-family: "Overlock", cursive;
   /*  */
 
   /* About Page */

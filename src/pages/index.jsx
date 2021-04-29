@@ -27,11 +27,7 @@ const IndexPage = ({ data }) => {
         <div className="home-header">
           <h1 className="home-header__header">Portfolio</h1>
 
-          <TypeTabs
-            setBtnState={setBtnState}
-            typeSwitch={typeSwitch}
-            btnState={btnState}
-          />
+          <TypeTabs setBtnState={setBtnState} typeSwitch={typeSwitch} />
         </div>
         <div className="grid-container">
           <div className="grid-container__illustrations">

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./styles.scss";
 
 export default function TypeTabs(props) {
-  const { setBtnState, typeSwitch, btnState } = props;
+  const { setBtnState, typeSwitch } = props;
 
   const [activeButton, setActiveButton] = useState(true);
 
@@ -13,27 +13,27 @@ export default function TypeTabs(props) {
   return (
     <div className="tabs-container">
       <button
-        className={`tabs-container__raster ${
+        id="raster-btn"
+        className={`tabs-container__raster tab ${
           activeButton ? "active" : "disable"
         }`}
         onClick={() => {
           setBtnState(false);
           typeSwitch();
           setActiveButton(true);
-          console.log(btnState);
         }}
       >
         Raster
       </button>
       <button
-        className={`tabs-container__vector ${
+        id="vector-btn"
+        className={`tabs-container__vector tab ${
           !activeButton ? "active" : "disable"
         }`}
         onClick={() => {
           setBtnState(true);
           typeSwitch();
           setActiveButton(false);
-          console.log(btnState);
         }}
       >
         Vector
