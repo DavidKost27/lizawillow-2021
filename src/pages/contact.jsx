@@ -10,6 +10,7 @@ function ContactForm() {
   }
   return (
     <div className="form-container ">
+      <header className="header">Contact Me</header>
       <form className="form" onSubmit={handleSubmit}>
         <div className="input-container">
           <label htmlFor="email">Email Address</label>

@@ -1,21 +1,73 @@
+$border-color: rgba(207, 207, 207, 0.383);
+
 .tabs-container {
+  margin-bottom: 20px;
   .tab {
-    padding: 2px 20px;
+    padding: 4px 25px;
     font-size: var(--type-tabs-font-size);
     font-family: var(--type-tabs-text-font-family);
     font-weight: 700;
-  }
-  &__raster {
-  }
-  &__vector {
+    border-top: 2px solid $border-color;
+    border-bottom: 4px solid $border-color;
   }
 
+  &__raster {
+    border-left: 4px solid $border-color;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+  }
+  &__vector {
+    border-left: none;
+    border-right: 4px solid $border-color;
+    border-radius: 0 5px 5px 0;
+  }
   .active {
     background-color: var(--type-tabs-active-backgroundcolor);
     color: var(--type-tabs-active-text-color);
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 4px solid rgb(63, 62, 62);
+    transition: 0.3s ease-in-out;
+  }
+
+  .active-raster {
+    border-left: 4px solid rgba(90, 90, 90, 0.664);
+  }
+
+  .active-vector {
+    border-right: 4px solid rgba(100, 100, 100, 0.664);
   }
   .disable {
     background-color: var(--type-tabs-backgroundcolor);
     color: var(--type-tabs-text-color);
+  }
+}
+
+@media only screen and (min-width: 1230px) {
+  .tabs-container {
+    .tab {
+    }
+    .tab:hover {
+      transition: 0.4s;
+      transform: scale(1.08);
+    }
+    .tab:disabled:hover {
+      transform: none;
+    }
+
+    &__raster {
+    }
+    &__vector {
+    }
+    .active {
+    }
+
+    .active-raster {
+    }
+
+    .active-vector {
+    }
+    .disable {
+      cursor: pointer;
+    }
   }
 }

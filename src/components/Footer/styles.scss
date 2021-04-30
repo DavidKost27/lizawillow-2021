@@ -26,9 +26,12 @@
   }
 
   .copyrights {
+    font-size: 14px;
+    margin-bottom: 5px;
   }
 
   .built-by {
+    font-size: 14px;
   }
 }
 
@@ -57,8 +60,10 @@
         margin: 0 10px;
         color: var(--footer-icons-text-color);
         background-color: var(--footer-icons-background-color);
+        transition: 0.3s ease-in-out;
       }
       &__icon-wrapper:hover {
+        transition: 0.3s ease-in-out;
         color: var(--footer-icons-text-active-color);
         background-color: var(--footer-icons-background-active-color);
       }

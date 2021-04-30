@@ -15,26 +15,28 @@ export default function TypeTabs(props) {
       <button
         id="raster-btn"
         className={`tabs-container__raster tab ${
-          activeButton ? "active" : "disable"
+          activeButton ? "active-raster active" : "disable"
         }`}
         onClick={() => {
           setBtnState(false);
           typeSwitch();
           setActiveButton(true);
         }}
+        disabled={!activeButton ? false : true}
       >
         Raster
       </button>
       <button
         id="vector-btn"
         className={`tabs-container__vector tab ${
-          !activeButton ? "active" : "disable"
+          !activeButton ? "active-vector active" : "disable"
         }`}
         onClick={() => {
           setBtnState(true);
           typeSwitch();
           setActiveButton(false);
         }}
+        disabled={activeButton ? false : true}
       >
         Vector
       </button>

@@ -58,6 +58,7 @@
   /*  */
 
   /* About Page */
+  --about-text-font-family: var(--type-tabs-text-font-family);
   /* Header */
   --header-text-color: rgb(0, 0, 0);
   /* Description */
